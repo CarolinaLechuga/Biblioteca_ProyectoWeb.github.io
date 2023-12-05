@@ -1,0 +1,34 @@
+﻿@model Biblioteca.Models.BliotecaEnridades.Usuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Rol.TipoRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rol.TipoRol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UsuarioID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
